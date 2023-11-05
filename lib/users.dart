@@ -23,6 +23,9 @@ class _GenerateUsersState extends State<GenerateUsers> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Vipul Page routing and Api call'),
+      ),
       body: FutureBuilder<List<dynamic>>(
         future: futureUsers,
         builder: (context, snapshot) {
@@ -44,7 +47,7 @@ class _GenerateUsersState extends State<GenerateUsers> {
                   margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   decoration: BoxDecoration(
                     color: Colors.amber.shade100,
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: ListTile(
                     leading: ClipRRect(

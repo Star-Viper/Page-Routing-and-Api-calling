@@ -4,7 +4,8 @@ import 'users.dart';
 
 void main() {
   runApp(const MaterialApp(
-    title: 'Navigation Basics',
+    //debugShowCheckedModeBanner:false
+    title: 'Api calling',
     home: Page1(),
   ));
 }
@@ -24,7 +25,7 @@ class Page1 extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => GenerateUsers(input: '5')), // You can change the input as needed
+              MaterialPageRoute(builder: (context) => GenerateUsers(input: '25')), // You can change the input as needed
             );
           },
         ),
