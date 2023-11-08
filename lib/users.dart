@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+//import 'package:main.dart';
 
 class GenerateUsers extends StatefulWidget {
   final String input;
@@ -10,7 +11,6 @@ class GenerateUsers extends StatefulWidget {
   @override
   State<GenerateUsers> createState() => _GenerateUsersState();
 }
-
 class _GenerateUsersState extends State<GenerateUsers> {
   late Future<List<dynamic>> futureUsers;
 
